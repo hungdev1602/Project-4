@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.chat-app {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.chat-app__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chat-app__header .inner-logo a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+.chat-app__header .inner-action a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #000;
+  color: #000;
+  padding: 5px 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.chat-app__header .inner-action a:last-child {
+  margin-right: 0;
+}
+
+.chat-app__header .inner-action a:hover {
+  background-color: #595959;
+  color: #fff;
+}
+
+/* Chat */
+.chat {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.chat__body {
+  padding: 10px;
+}
+
+.chat__incoming-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.chat__content {
+  width: 230px;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.chat__outgoing {
+  position: relative;
+}
+
+.chat__outgoing .button-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: red;
+  color: #fff;
+  font-size: 16px;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 0 10px 10px 0;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.chat__outgoing:hover .button-delete {
+  display: block;
+}
+
+.chat__outgoing .chat__content {
+  background-color: #fe5da3;
+  color: #fff;
+  margin-left: auto;
+}
+
+.chat__incoming,
+.chat__outgoing {
+  margin-bottom: 10px;
+}
+
+.chat .inner-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chat .chat__outgoing .inner-images {
+  justify-content: flex-end;
+}
+
+.chat .inner-images img {
+  width: 80px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.chat__foot {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  position: relative;
+}
+
+.chat__foot .inner-preview-images .label-container {
+  display: none;
+}
+
+.chat__foot .inner-preview-images .input-container {
+  display: none;
+}
+
+.chat__foot .inner-preview-images .image-preview {
+  height: auto;
+  padding: 0;
+}
+
+.chat__foot .inner-preview-images .image-preview-item {
+  width: 90px;
+  background-size: contain;
+}
+
+.chat__foot form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat__foot form input {
+  flex: 1;
+  margin-right: 10px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+  outline: 0;
+}
+
+.button-icon {
+  height: 40px;
+  width: 50px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #fe5da3;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.button-image {
+  height: 40px;
+  width: 50px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #fe5da3;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.tooltip:not(.shown) {
+  display: none;
+}
+
+.chat__foot form button {
+  height: 40px;
+  width: 50px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fe5da3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chat__foot .tooltip {
+  right: -230px !important;
+  left: auto !important;
+  top: 50px !important;
+  bottom: auto !important;
+}
+
+.form {
+  padding: 15px;
+  background-color: #e2e2e2;
+  border-radius: 8px;
+}
+
+.form .form-group {
+  margin-bottom: 20px;
+}
+
+.form .form-group label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form .form-group input {
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.form button {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 4px;
+  background-color: orange;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chat-app__header .inner-action [button-login],
+.chat-app__header .inner-action [button-register],
+.chat-app__header .inner-action [button-logout],
+.chat {
+  display: none;
+}
